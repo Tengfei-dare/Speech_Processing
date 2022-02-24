@@ -1,4 +1,4 @@
-# Speech_Processing with matlab
+# Speech Processing with matlab
 
 These files are written for learning to process speach signal with matlab.
 
@@ -9,3 +9,6 @@ Reference books:
 ----------
 
 Many terms are written in Chinese as the reference books are in Chinese.
+
+Main notes
+- `Speech_processing_notes.md` contains the notes taken when reading the reference books
