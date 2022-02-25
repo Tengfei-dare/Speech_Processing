@@ -1,5 +1,5 @@
 % MATLAB basic introduction
-% Chapiter 1
+% Chapter 1
 
 clear all;
 close all;
