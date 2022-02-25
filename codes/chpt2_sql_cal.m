@@ -9,5 +9,5 @@ clc;
 filename = "./chpt2_myRecording";
 [myAudio,Fs] = audioread(filename);
 myAudio = myAudio / max(myAudio); % normalize
-t = (0:length(myAudio)-1)/Fs
+t = (0:length(myAudio)-1)/Fs;
 

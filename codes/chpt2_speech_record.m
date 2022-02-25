@@ -25,15 +25,16 @@ play(myRecording);
 array_myRecording = getaudiodata(myRecording);
 plot(array_myRecording);
 title('My Audio Signal (double)');
-% Scale data to 0~1 and play as sound
-soundsc(array_myRecording);
 
+% Scale data to 0~1 and play as sound
+soundsc(array_myRecording, Fs);
 
 %% audio write and read
-filename = "./chpt2_myRecording";
+filename = "./chpt2_myRecording.wav";
 audiowrite(filename, array_myRecording, Fs);
 
 info = audioinfo(filename);
 disp(info);
 
 [myRecording_readed,Fs] = audioread(filename);
+soundsc(array_myRecording, Fs);
