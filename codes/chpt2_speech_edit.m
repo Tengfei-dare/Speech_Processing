@@ -8,7 +8,7 @@ clc;
 % audio read
 filename = "./chpt2_myRecording.wav";
 [myAudio,Fs] = audioread(filename);
-myAudio = myAudio / max(myAudio); % normalize
+myAudio = myAudio / max(myAudio(:)); % normalize
 t = (0:length(myAudio)-1)/Fs;
 
 % noise create
