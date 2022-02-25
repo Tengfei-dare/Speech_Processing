@@ -8,6 +8,7 @@ clc;
 % audio read
 filename = "./chpt2_myRecording.wav";
 [myAudio,Fs] = audioread(filename);
+myAudio = myAudio(:,1); % choose only one channel
 myAudio = myAudio / max(myAudio(:)); % normalize
 t = (0:length(myAudio)-1)/Fs;
 
