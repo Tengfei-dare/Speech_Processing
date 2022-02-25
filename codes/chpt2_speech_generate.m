@@ -1,4 +1,4 @@
-% Basic speech processing with matlab
+% Speech generation with matlab
 % Chapter 2
 
 clear all;
